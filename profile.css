@@ -125,6 +125,7 @@
   position: fixed;
   top: 0;
   background-color: black;
+  opacity: 80%;
   color: white;
   border-bottom: 1px solid rgb(91, 89, 89);
 }
