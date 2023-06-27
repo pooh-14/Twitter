@@ -111,6 +111,72 @@
   background-color:#202327;
 }
 
+#more{
+  position: relative;
+}
+
+#dropdown{
+  position: absolute;
+  top: 320px;
+  width: 330px;
+  height: 270px;
+  border: 1px solid #444647;
+  border-radius: 12px;
+  background-color: black;
+  color: #e7e9ea;
+  z-index: 1;
+  display: none;
+}
+
+#dropdown>div:nth-child(1){
+ border-bottom:1px solid #676c71;
+ /* padding-bottom: 15px; */
+ margin-left: 15px;
+ margin-top: 15px;
+}
+   
+#dropdown>div:nth-child(1)>div{
+ display: flex;
+
+ height: 45px;
+}
+
+#dropdown>div:nth-child(1)>div:hover{
+  background-color: #202327;
+}
+
+#dropdown>div:nth-child(1)>div>i{
+  margin-top: 5px;
+}
+
+#dropdown>div:nth-child(1)>div>p>a{
+  margin-left: 15px;
+  text-decoration: none;
+  color: #e7e9ea;
+}
+
+#dropdown>div:nth-child(2){
+   width: 90%;
+   margin: auto;
+   margin-top: 15px;
+}
+
+#dropdown>div:nth-child(2)>select{
+  width: 100%;
+  height: 47px;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: #e7e9ea;
+  font-size: 15px;
+  /* margin-bottom: 23px; */
+  font-weight: 600;
+}
+
+#dropdown>div:nth-child(2)>:hover{
+  background-color: #202327;
+}
+
 #bet {
   width: 39.5%;
   border: 1px solid rgb(91, 89, 89);

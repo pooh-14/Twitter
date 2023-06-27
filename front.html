@@ -9,6 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./front.css" />
     <title>Document</title>
+
+   
+
   </head>
   <body>
     <div id="screen">
@@ -50,8 +53,36 @@
             <p><a href="/profile.html">Profile</a></p>
           </div>
           <div>
+            <div id="dropdown">
+              <div>
+                <div>
+                  <i class="fa-solid fa-at"></i>
+                  <p><a href="/connect.html">Connect</a></p>
+                </div>
+                <div >
+                  <i class="fa-regular fa-pen-to-square"></i>
+                  <p><a href="/draft.html">Drafts</a></p>
+                </div>
+              </div>
+              <div>
+                <select>
+                  <option>Creator Studio</option>
+                  <option>Analytics</option>
+                </select>
+
+                <select>
+                  <option>Professional Tools</option>
+                  <option>Analytics</option>
+                </select>
+
+                <select>
+                  <option>Settings and Support</option>
+                  <option>Analytics</option>
+                </select>
+              </div>
+            </div>
             <i class="fa-solid fa-ellipsis"></i>
-            <p><a href="/more.html">More</a></p>
+            <p id="more">More</p>
           </div>
         </div>
         <div>
@@ -313,5 +344,21 @@
         </div>
        </div>
     </div>
+
+
+    <script>
+      let more = document.getElementById("more");
+      let dropdown = document.getElementById("dropdown");
+      
+      more.addEventListener("click" , function(){
+        if(dropdown.style.display === "none"){
+          dropdown.style.display = "block";
+        }else{
+          dropdown.style.display = "none";
+        }
+      });
+    </script>
+
+
   </body>
 </html>

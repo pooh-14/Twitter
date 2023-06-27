@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+  #more{
+    width: 200px;
+    height: 30px;
+    border: 1px solid yellow;
+    background-color: yellow;
+    margin-left: 100px;
+    position: relative;
+}
+
+#dropdown{
+  position: absolute;
+  top: 50px;
+  z-index: 1;
+  display: none;
+  width: 200px;
+  height: 70px;
+  border: 1px solid #444647;
+  border-radius: 12px;
+  background-color: black;
+  color: #e7e9ea;
+}
+</style>
+
+
+
+</head>
+<body>
+    <div>
+        <div id="dropdown"></div>
+        <p id="more">More</p>
+    </div>
+
+    <script>
+        let more = document.getElementById("more");
+        let dropdown = document.getElementById("dropdown");
+        
+        more.addEventListener("click" , function(){
+          if(dropdown.style.display === "none"){
+            dropdown.style.display = "block";
+          }else{
+            dropdown.style.display = "none";
+          }
+        });
+      </script>
+</body>
+</html>
