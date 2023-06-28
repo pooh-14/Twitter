@@ -369,6 +369,8 @@
     <script>
       let more = document.getElementById("more");
       let dropdown = document.getElementById("dropdown");
+      let draft = document.getElementById("draft")
+      let dropup = document.getElementById("dropup")
       
       more.addEventListener("click" , function(){
         if(dropdown.style.display === "none"){
@@ -377,8 +379,15 @@
           dropdown.style.display = "none";
         }
       });
-    </script>
 
+      draft.addEventListener("click" , function(){
+        if(dropup.style.display === "none"){
+          dropup.style.display = "block";
+        }else{
+          dropup.style.display = "none";
+        }
+      });
+    </script>
 
   </body>
 </html>
