@@ -12,6 +12,27 @@
   </head>
   <body>
     <div id="screen">
+
+
+       <div id="dropup">
+         <div>
+            <div>
+              <div>
+               <a style="color: white;" href="/connect.html"><i class="fa-solid fa-arrow-left"></i></a> 
+                 <p>Drafts</p>
+              </div>
+              <span style="border-bottom: 5px solid #1d9bf0;">Unsent Tweets</span>
+              <span>Scheduled</span>
+            </div>
+            <div>
+              <img src="https://abs.twimg.com/responsive-web/client-web/alarm-clock-800x400.v1.6c5b3fe9.png"/>
+              <p>Hold that thought</p>
+              <p>Not ready to send a Tweet just yet? Save it to your drafts or schedule it for later.</p>
+            </div>
+         </div>
+       </div>
+
+
       <div id="left">
         <div>
           <i class="fa-brands fa-twitter fa-2xl"></i>
@@ -58,7 +79,7 @@
                 </div>
                 <div >
                   <i class="fa-regular fa-pen-to-square"></i>
-                  <p><a href="/draft.html">Drafts</a></p>
+                  <p id="draft"><a>Drafts</a></p>
                 </div>
               </div>
               <div>
@@ -290,12 +311,22 @@
     <script>
         let more = document.getElementById("more");
         let dropdown = document.getElementById("dropdown");
+        let draft = document.getElementById("draft")
+        let dropup = document.getElementById("dropup")
         
         more.addEventListener("click" , function(){
           if(dropdown.style.display === "none"){
             dropdown.style.display = "block";
           }else{
             dropdown.style.display = "none";
+          }
+        });
+
+        draft.addEventListener("click" , function(){
+          if(dropup.style.display === "none"){
+            dropup.style.display = "block";
+          }else{
+            dropup.style.display = "none";
           }
         });
       </script>

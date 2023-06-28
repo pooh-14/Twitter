@@ -176,7 +176,88 @@
   #dropdown>div:nth-child(2)>:hover{
     background-color: #202327;
   }
+
+  #sreen{
+    position: relative;
+  }
+
+  #dropup{
+    display: none;
+    position: absolute;
+    /* top: 0; */
+   left: 0;
+   /* bottom: 0; */
+    width:100%;
+    height: 100%;
+    border: 1px solid white;
+    background-color: rgba(91, 112, 131, 0.4);
+    color: #e7e9ea;
+   z-index: 1;
+  }
+
+  #dropup>div{
+    width: 550px;
+    height: 650px;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 12px;
+    margin: auto;
+    margin-top: 40px;
+  }
+
+  #dropup>div>div:nth-child(1){
+    border-bottom:1px solid #43474d;
+    padding-bottom: 14px;
+  }
   
+  #dropup>div>div:nth-child(1)>div{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 15px;
+    padding-bottom: 25px;
+  }
+
+  #dropup>div>div:nth-child(1)>div>i{
+    margin-top: 7px;
+  }
+
+  #dropup>div>div:nth-child(1)>div>p{
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 40px;
+  }
+
+  #dropup>div>div:nth-child(1)>span{
+    margin-left: 85px ;
+    margin-right: 85px;
+    font-size: 15px;
+    font-weight: 700;
+    padding-bottom: 10px;
+  }
+
+  #dropup>div>div:nth-child(2){
+    width: 60%;
+    margin: auto;
+  }
+
+  #dropup>div>div:nth-child(2)>img{
+    width: 320px;
+    height: 165px;
+    margin-top: 60px;
+  }
+
+  #dropup>div>div:nth-child(2)>p:nth-child(2){
+    margin-top: 30px;
+    font-size: 31px;
+    font-weight: 800;
+  }
+
+  #dropup>div>div:nth-child(2)>p:nth-child(3){
+    margin-top: 10px;
+    font-size: 15px;
+    color: #676c71;
+  }
+
   #bet {
     width: 39.5%;
     border: 1px solid rgb(91, 89, 89);
