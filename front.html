@@ -35,6 +35,28 @@
       </div>
 
 
+      <div id="dropright">
+        <div>
+        <div>
+          <a href="/front.html"><i class="fa-solid fa-xmark fa-lg "></i></a>
+          <i class="fa-brands fa-twitter fa-2xl"></i>
+        </div>
+        <div>
+          <img src="https://ton.twimg.com/onboarding/professional_profiles/upsell_header_wide_v2.png"/>
+        </div>
+        <div>
+          <p>Twitter for Professionals</p>
+          <p>Get access to the tools you need to better connect with your audience, grow your brand, and increase your profits.</p>
+          <p>By tapping "Agree & continue", you are agreeing to our </p>
+          <p>Professional Account policy. </p>
+        </div>
+        <div>
+          <button>Agree & Continue</button>
+        </div>
+        </div>
+      </div>
+
+
       <div id="left">
         <div>
           <i class="fa-brands fa-twitter fa-2xl"></i>
@@ -85,20 +107,38 @@
                 </div>
               </div>
               <div>
-                <select>
-                  <option>Creator Studio</option>
-                  <option>Analytics</option>
-                </select>
+                <div>
+                  <p>Creator Studio</p>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
 
-                <select>
-                  <option>Professional Tools</option>
-                  <option>Analytics</option>
-                </select>
+                <div>
+                   <p id="tool">Professional Tools</p>
+                   <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <span id="droptool">
+                    <div>
+                      <i class="fa-solid fa-rocket"></i>
+                      <p id="prof">Twitter for Professionals</p>
+                    </div>
+                    <div>
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                      <p>Twitter Ads</p>
+                    </div>
+                    <div>
+                      <i class="fa-solid fa-money-bill"></i>
+                      <p><a style="text-decoration: none;
+                        color: #e7e9ea;"
+                         href="/mone.html">Monetization</a></p>
+                    </div>
+                </span>
 
-                <select>
-                  <option>Settings and Support</option>
-                  <option>Analytics</option>
-                </select>
+
+                <div>
+                  <p>Settings and Support</p>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                  
               </div>
             </div>
             <i class="fa-solid fa-ellipsis"></i>
@@ -369,8 +409,15 @@
     <script>
       let more = document.getElementById("more");
       let dropdown = document.getElementById("dropdown");
+
       let draft = document.getElementById("draft")
       let dropup = document.getElementById("dropup")
+
+      let prof = document.getElementById("prof")
+      let dropright = document.getElementById("dropright")
+
+      let tool = document.getElementById("tool")
+      let droptool = document.getElementById("droptool")
       
       more.addEventListener("click" , function(){
         if(dropdown.style.display === "none"){
@@ -383,8 +430,26 @@
       draft.addEventListener("click" , function(){
         if(dropup.style.display === "none"){
           dropup.style.display = "block";
+          dropdown.style.display = "none";
         }else{
           dropup.style.display = "none";
+        }
+      });
+
+      prof.addEventListener("click" , function(){
+        if(dropright.style.display === "none"){
+          dropright.style.display = "block";
+          dropdown.style.display = "none";
+        }else{
+          dropright.style.display = "none";
+        }
+      });
+
+      tool.addEventListener("click" , function(){
+        if(droptool.style.display === "none"){
+          droptool.style.display = "block";
+        }else{
+          droptool.style.display = "none";
         }
       });
     </script>
